@@ -1,0 +1,4 @@
+# Anthropic system card PDFs — copyrighted, not redistributed (see README)
+docs/*.pdf
+
+.DS_Store
