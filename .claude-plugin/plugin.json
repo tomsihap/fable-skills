@@ -1,0 +1,13 @@
+{
+  "name": "fable-skills",
+  "description": "Makes Claude Opus 4.8 behave as close to Claude Fable 5 as prompt-level skills allow: verification discipline, long-task persistence, orchestration, concision, honesty, calibrated refusals. Grounded page-by-page in both system cards.",
+  "version": "1.0.0",
+  "author": {
+    "name": "tomsihap",
+    "url": "https://github.com/tomsihap"
+  },
+  "homepage": "https://github.com/tomsihap/fable-skills",
+  "repository": "https://github.com/tomsihap/fable-skills",
+  "license": "MIT",
+  "keywords": ["fable", "opus", "behavior", "emulation", "skills"]
+}

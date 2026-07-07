@@ -1,0 +1,15 @@
+{
+  "name": "fable-skills",
+  "description": "Marketplace for the Fable 5 emulation pack: skills that make Claude Opus 4.8 behave as close to Claude Fable 5 as prompting allows.",
+  "owner": {
+    "name": "tomsihap",
+    "url": "https://github.com/tomsihap"
+  },
+  "plugins": [
+    {
+      "name": "fable-skills",
+      "source": "./",
+      "description": "Fable 5 emulation pack for Claude Opus 4.8 — 10 behavior skills distilled from the official system cards, with automatic session bootstrap via SessionStart hook."
+    }
+  ]
+}

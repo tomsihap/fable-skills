@@ -4,6 +4,19 @@ A pack of 10 Claude Code skills that brings **Claude Opus 4.8**'s behavior as cl
 
 ## Quick start
 
+### Option 1 — install as a plugin (recommended)
+
+In any Claude Code session:
+
+```
+/plugin marketplace add tomsihap/fable-skills
+/plugin install fable-skills@fable-skills
+```
+
+Done. A `SessionStart` hook injects the fable-mode routing and the always-on core automatically at every session start and after each context compaction — nothing to type, no CLAUDE.md edit. Skills are namespaced under the plugin: `/fable-skills:fable-mode`, `/fable-skills:fable-verification`, etc. The pack is designed for Claude Opus 4.8 (`/model opus`) and harmless on other models.
+
+### Option 2 — copy the raw skills
+
 ```bash
 git clone https://github.com/tomsihap/fable-skills.git
 cd fable-skills
@@ -15,9 +28,7 @@ cp -r skills/* ~/.claude/skills/
 cp -r skills/* /path/to/your/project/.claude/skills/
 ```
 
-Then, in a Claude Code session running Opus 4.8, type **`/fable-mode`** at the start of the session (and again after any context compaction). It loads the routing index and the always-on core rules; the nine other skills load on demand via their triggers, or manually (`/fable-verification`, `/fable-concision`, ...).
-
-To make it automatic, add one line to your `CLAUDE.md` (global or project):
+Skills keep their short names (`/fable-mode`, `/fable-verification`, ...) but nothing loads automatically: type **`/fable-mode`** at the start of each session (and after any compaction), or make it automatic with one line in your `CLAUDE.md` (global or project):
 
 ```markdown
 At the start of every session and after each context compaction, read the fable-mode skill and apply its routing.
